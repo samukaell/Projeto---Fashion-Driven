@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Driven</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="/estilos/styles-header.css">
+    <link rel="stylesheet" href="./estilos/styles-main.css">
+    <link rel="stylesheet" href="./estilos/reset.css">
+    <link rel="stylesheet" href="./estilos/styles-footer.css">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="./midia/Group 189.png" alt="Logo Fashion Driven"></div>
+    </header>
+
+    <main>
+        <div class="conteudo-main">
+            <div class="modelos">
+                <div class="caixa-modelo camisa">
+                    <p class="texto-modelos">Escolha o modelo</p>
+                    <div class="modelo">
+                        <div class="icone" onclick="selecionarRoupa(this,'camisa')">
+                            <div class="image">
+                                <img src="./midia/tshirt.png" alt="icone tshirt">
+                            </div>
+                            <p class="nome">T-shirt</p>
+                        </div>
+                        <div class="icone" onclick="selecionarRoupa(this,'camisa')">
+                            <div class="image">
+                                <img src="./midia/Camiseta.png" alt="icone Camiseta">
+                            </div>
+                            <p class="nome">Camiseta</p>
+                        </div>
+                        <div class="icone" onclick="selecionarRoupa(this,'camisa')">
+                            <div class="image">
+                                <img src="./midia/Mangalonga.png" alt="icone Mangalonga">
+                            </div>
+                            <p class="nome">Mangalonga</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="caixa-modelo gola">
+                    <p class="texto-modelos">Escolha a gola</p>
+                    <div class="modelo Gola">
+                        <div class="icone" onclick="selecionarRoupa(this,'gola')">
+                            <div class="image">
+                                <img src="./midia/GolaV.png" alt="icone Gola V">
+                            </div>
+                            <p class="nome">Gola V</p>
+                        </div>
+                        <div class="icone" onclick="selecionarRoupa(this,'gola')">
+                            <div class="image">
+                                <img src="./midia/GolaRedonda.png" alt="icone Gola Redonda">
+                            </div>
+                            <p class="nome">Gola Redonda</p>
+                        </div>
+                        <div class="icone" onclick="selecionarRoupa(this,'gola')">
+                            <div class="image">
+                                <img src="./midia/GolaPolo.png" alt="icone Gola Polo">
+                            </div>
+                            <p class="nome">Gola Polo</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="caixa-modelo tecido">
+                    <p class="texto-modelos">Escolha o Tecido</p>
+                    <div class="modelo Tecido">
+                        <div class="icone" onclick="selecionarRoupa(this,'tecido')">
+                            <div class="image">
+                                <img src="./midia/Seda.png" alt="icone Seda">
+                            </div>
+                            <p class="nome">Seda</p>
+                        </div>
+                        <div class="icone" onclick="selecionarRoupa(this,'tecido')">
+                            <div class="image">
+                                <img src="./midia/Algodão.png" alt="icone Algodão">
+                            </div>
+                            <p class="nome">Algodão</p>
+                        </div>
+                        <div class="icone" onclick="selecionarRoupa(this,'tecido')">
+                            <div class="image">
+                                <img src="./midia/Poliester.png" alt="icone Poliester">
+                            </div>
+                            <p class="nome">Poliester</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imagem-fornecida">
+                    <p class="texto">Imagem de referência</p>
+                    <form action="">
+                        <input type="url" class="input-image" placeholder="Insira o link">
+                        <button class="botao botao-bloqueado" type="submit">Confirmar Pedido</button>
+                    </form>
+                </div>
+                
+            </div>
+
+            <div class="imagem">
+                <img src="./midia/Ilustração.png" alt="Moça estilosa da Driven">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="caixa-footer">
+        <p>Ultimos pedidos</p>
+        <div class="roupas-on">
+            <div class="peca">
+                <img src="./midia/roupas/Blusa1.png" alt="blusa1">
+                <p class="criador">Agata</p>
+            </div>
+            <div class="peca">
+                <img src="./midia/roupas/Blusa2.png" alt="blusa1">
+                <p class="criador">Agata</p>
+            </div>
+            <div class="peca">
+                <img src="./midia/roupas/Blusa3.png" alt="blusa1">
+                <p class="criador">Agata</p>
+            </div>
+        </div>
+        </div>
+    </footer>
+    
+
+    <!--Scripts-->
+    <script src="./scripts/dados.js"></script>
+    <script src="./scripts/validarNaoNullUndefined.js"></script>
+    <script src="./scripts/selecao-roupa.js"></script>
+    <script src="./scripts/capturar-url.js"></script>
+
+</body>
+</html>
