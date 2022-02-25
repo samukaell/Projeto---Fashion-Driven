@@ -17,3 +17,10 @@ DadosTeste = {
 		"owner": "Batata Dev",
 		"author": "Batata Dev"
 }
+
+camisaConfirmada = {
+	"model": null,
+	"neck": null,
+	"material": null,
+	"image": null
+}
