@@ -1,14 +1,14 @@
-function validacaoForm(){
 
-    document.querySelector("form").addEventListener("submit", event =>{
-        console.log("Formato da image aceito!");  
-        event.preventDefault();
-        const url = document.querySelector(".input-image").value;
-        DADOS.image = url;  
-        verificarSelecaoModelos();
-    });
-}
-validacaoForm();
+const urltela = document.querySelector(".imagem-fornecida");
+urltela.querySelector("form").addEventListener("submit", event =>{
+    console.log("Formato da image aceito!");  
+    event.preventDefault();
+    const url = urltela.querySelector(".input-image").value;
+    DADOS.image = url;  
+    verificarSelecaoModelos();
+    enviarDadosApi();
+});
+
 
 function verificarSelecaoModelos(){
     const botao = document.querySelector(".botao");
@@ -16,13 +16,11 @@ function verificarSelecaoModelos(){
         validarNaoNullUndefined(DADOS.neck)  && 
         validarNaoNullUndefined(DADOS.material)
     ){  
-        // console.log("model ->"+DADOS.model);
-        // console.log("neck ->"+DADOS.neck);
-        // console.log("material ->"+DADOS.material);
 
         botao.classList.remove("botao-bloqueado");
         botao.classList.add("botao-desbloqueado");
     }
+
 }
 
 

@@ -7,6 +7,7 @@
     <title>Fashion Driven</title>
 
     <!--CSS-->
+    <link rel="stylesheet" href="./estilos/styles-cadastro.css">
     <link rel="stylesheet" href="/estilos/styles-header.css">
     <link rel="stylesheet" href="./estilos/styles-main.css">
     <link rel="stylesheet" href="./estilos/reset.css">
@@ -100,7 +101,7 @@
                 <div class="imagem-fornecida">
                     <p class="texto">Imagem de referência</p>
                     <form action="">
-                        <input type="url" class="input-image" placeholder="Insira o link">
+                        <input type="url" class="input-image" placeholder="Insira o link" onkeypress="verificarSelecaoModelos()">
                         <button class="botao botao-bloqueado" type="submit">Confirmar Pedido</button>
                     </form>
                 </div>
@@ -132,13 +133,29 @@
         </div>
         </div>
     </footer>
+
+    <!--TËLA CADASTRO-->
+    <div class="tela-cadastro">
+        
+    </div>
     
+
+    <!--API-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
+
+    <!--Componentes-->
+    <script src="./scripts/componente/pedido.js"></script>
+    <script src="./scripts/componente/tela-cadastro.js"></script>
 
     <!--Scripts-->
     <script src="./scripts/dados.js"></script>
+    <script src="./scripts/carregar-dados-api.js"></script>
+    <script src="./scripts/enviar-dados-api.js"></script>
     <script src="./scripts/validarNaoNullUndefined.js"></script>
+    <script src="./scripts/capturar-nome.js"></script>
     <script src="./scripts/selecao-roupa.js"></script>
     <script src="./scripts/capturar-url.js"></script>
+    
 
 </body>
 </html>
