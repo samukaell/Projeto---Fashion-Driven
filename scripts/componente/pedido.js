@@ -31,7 +31,7 @@ function capturarPedido(){
             let input = document.querySelector(".input-image");
             input.value = element.image;
 
-            carregarTelaConfirmcao(DADOS);
+            carregarTelaConfirmcao(DADOS,"Esta roupa foi carregada, basta confirmar o pedido");
         }
     });
 }

@@ -7,7 +7,6 @@ urltela.querySelector("form").addEventListener("submit", event =>{
     DADOS.image = url;  
     verificarSelecaoModelos();
     if(verificarSelecaoModelos()){ 
-        console.log("Enviou?????? oshi");
         enviarDadosApi();
     }
 });

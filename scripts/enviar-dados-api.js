@@ -8,7 +8,7 @@ function enviarDadosApi(){
 function tratarSucessoEnvio(response){
     console.log("Seu Pedido foi enviado com sucesso meu amigo estilista :)");
     buscarDados();
-    carregarTelaConfirmcao(DADOS);
+    carregarTelaConfirmcao(DADOS,"Confirmar Pedido");
 }
 
 function tratarErroEnvio(erro) {

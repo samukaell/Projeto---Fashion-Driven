@@ -1,7 +1,7 @@
-function criarTelaConfirmcao(roupa){
+function criarTelaConfirmcao(roupa,texto){
     let telaConfirmcao = `
     <div class="caixa-confirmacao">
-        <p class="titulo">Confirmar Pedido</p>
+        <p class="titulo">${texto}</p>
         <div class="camisa-confirmada">
             <img src="${roupa.image}" class="camisa-conf">
             <p class="modelo-conf"><strong>Modelo :</strong> ${roupa.model}</p>
@@ -15,10 +15,10 @@ function criarTelaConfirmcao(roupa){
     return telaConfirmcao;
 }
 
-function carregarTelaConfirmcao(roupa){
+function carregarTelaConfirmcao(roupa,texto){
     const tela = document.querySelector(".tela-confimacao");
     tela.classList.remove("hidden");
-    tela.innerHTML = criarTelaConfirmcao(roupa);
+    tela.innerHTML = criarTelaConfirmcao(roupa,texto);
 }
 
 function desativarTelaConfirmcao(){
