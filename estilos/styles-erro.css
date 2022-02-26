@@ -1,0 +1,42 @@
+.caixa-erro{
+    width: 700px;
+    height: 400px;
+
+    position: fixed;
+    top: 25vh;
+    right: 25vw;
+    z-index: 3px;
+
+    background-color:  #FF546D;
+
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+.caixa-erro p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #E5E5E5;
+    margin-bottom: 20px;
+}
+
+.caixa-erro .alerta{
+    margin-bottom: 20px;
+    font-size: 60px;
+}
+
+.caixa-erro .recarregar{
+
+    margin-bottom: 20px;
+    font-size: 60px;
+    
+}
+
+.hidden{
+    display: none;
+}

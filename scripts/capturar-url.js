@@ -6,10 +6,11 @@ urltela.querySelector("form").addEventListener("submit", event =>{
     const url = urltela.querySelector(".input-image").value;
     DADOS.image = url;  
     verificarSelecaoModelos();
-    enviarDadosApi();
-    
+    if(verificarSelecaoModelos()){ 
+        console.log("Enviou?????? oshi");
+        enviarDadosApi();
+    }
 });
-
 
 function verificarSelecaoModelos(){
     const botao = document.querySelector(".botao");
@@ -20,8 +21,11 @@ function verificarSelecaoModelos(){
 
         botao.classList.remove("botao-bloqueado");
         botao.classList.add("botao-desbloqueado");
+        return true;
+    }else{
+        carregarTelaErro("Você esqueceu de selecionar as opções do seu pedido!");
+        return false;
     }
-
+    
 }
-
 

@@ -29,8 +29,7 @@ function carregarUltimoPedidos(){
     let i = 0
     let pedidos = ''
     BANCO.forEach(element => {
-        console.log("DADOS -> " + element.image);
-        pedidos = pedidos +  componentePedido(element.image,element.owner);
+        pedidos = pedidos +  componentePedido(element.image,element.owner,element.id);
         i++;
         if(i==10){
             roupas.innerHTML = pedidos;

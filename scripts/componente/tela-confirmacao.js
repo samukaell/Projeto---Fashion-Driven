@@ -18,7 +18,6 @@ function criarTelaConfirmcao(roupa){
 function carregarTelaConfirmcao(roupa){
     const tela = document.querySelector(".tela-confimacao");
     tela.classList.remove("hidden");
-    capturarConfirmacao();
     tela.innerHTML = criarTelaConfirmcao(roupa);
 }
 
