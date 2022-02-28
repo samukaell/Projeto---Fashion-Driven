@@ -6,6 +6,7 @@ function validacaoFormNomeUser(){
         event.preventDefault();
 
         const nome = telaCadastro.querySelector(".nome-usuario").value;
+        
         DADOS.owner = nome;
         DADOS.author = nome;
         desativarTelaCadastro();

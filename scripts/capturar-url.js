@@ -1,4 +1,3 @@
-
 const urltela = document.querySelector(".imagem-fornecida");
 urltela.querySelector("form").addEventListener("submit", event =>{
     console.log("Formato da image aceito!");  

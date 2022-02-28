@@ -7,7 +7,7 @@ const telaCadastro = `
         <p class="titulo">Bem Vindo</p>
         <form action="">
             <p class="texto">Qual o seu nome?</p>
-            <input class="nome-usuario" type="text" minlength="3" placeholder="Ex: Samuel">
+            <input class="nome-usuario" type="text" minlength="3" placeholder="Ex: Samuel" required>
             <button class="botao-cadastro" type="submit">Confirmar</button>
         </form>
     </div>

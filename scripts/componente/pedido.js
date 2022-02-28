@@ -13,7 +13,7 @@ function capturarID(elemento){
     if(id !== null){
         IDSELECIONADO = id;       
         capturarPedido();
-        console.log("ID->" + IDSELECIONADO);
+        
     }   
 }
 
